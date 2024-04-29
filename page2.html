@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Jumble Game</title>
+</head>
+<body>
+    <div class="bg-[#222426] w-screen h-screen flex justify-center items-center">
+        <div class="px-5 py-1 md:px-20 md:py-2">
+            <div class="flex flex-row justify-evenly gap-2 md:gap-4 md:gap-0 px-4">
+                <button id="heading-button-1"></button>
+                <div id="word_1" class="text-[#5b5b5d] text-xs md:text-lg py-1 px-3 md:py-6 md:px-10 border-b-2 border-b-[#5b5b5d] font-bold"></div>
+                <div id="word_2" class="text-[#5b5b5d] text-xs md:text-lg py-1 px-3 md:py-6 md:px-10 border-b-2 border-b-[#5b5b5d] font-bold"></div>
+                <div id="word_3" class="text-[#5b5b5d] text-xs md:text-lg py-1 px-3 md:py-6 md:px-10 border-b-2 border-b-[#5b5b5d] font-bold"></div>
+            </div>
+            <div class="bg-gradient-to-r from-transparent via-[#cdcece] to-transparent mt-4 h-[2px] w-full"></div>
+            <div id="gridContainer" class="grid grid-cols-3 grid-rows-4 gap-2 md:gap-4 mt-5 p-4 w-screen md:w-full"></div>
+            <div class="flex flex-row gap-4 justify-between items-center mt-20 h-[80px]">
+                <button class="bg-[#222426] text-[#d8b277] text-sm md:text-lg py-2 px-8 md:py-5 md:px-16 rounded-lg ring-1 ring-black shadow-sm shadow-white ml-4 hover:ring-2 hover:ring-[#d8b277]" onclick="verdict()">Confirm</button>
+                <h1 id="message" class="text-md md:text-lg text-lime-500"></h1>
+            </div>
+        </div>
+    </div>
+    <script src="selection.js"></script>
+    <script src="initialisation.js"></script>
+</body>
+</html>
